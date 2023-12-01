@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# get directory one level up from current directory $PWD = current dir .../advent-of-code-2020/day-01
+DIR=$(cd .. && pwd)
+
+echo $DIR
+export PYTHONPATH="$DIR:$PYTHONPATH"
+# run the program with the day as the input
+python3 $1/main.py
